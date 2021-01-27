@@ -1,0 +1,41 @@
+/* This makes the game board wiggle at the right and left margin */
+/* * {
+  box-sizing: border-box;
+} */                                   
+
+
+body {
+  margin:auto;
+  margin-top: 10px;
+  padding: 0;
+  height: 90vh;
+  width: 90vw;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-board {
+  align-self: center;
+  margin: auto;
+  padding: 0;
+  width: 90vmin;
+  height: 90vmin;
+  background-color: LightGray;
+  border: 0.25vh solid black;
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);         /*must be equal to grid in js */
+  grid-template-rows: repeat(21, 1fr);            /*must be equal to grid in js */
+}
+
+.snake {
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+  border: 0.25vh solid black;
+}
+
+.food {
+  padding: 0;
+  background-color: green;
+  border: 0.25vh solid black;
+}
